@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+@keyframes rocketFly {
+  0% {
+    transform: translate(-50%, 100vh);
+  }
+  100% {
+    transform: translate(-50%, -120vh);
+  }
+}
+
+.rocket {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 120px;
+  animation: rocketFly 1.8s ease-in forwards;
+}
